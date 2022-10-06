@@ -1,0 +1,103 @@
+{
+  "about": {
+    "title": "ABOUT MY BUSINESS",
+    "mainText": {
+      "image": "about-us-img1.png",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis ac, gravida quis tortor. Suspendisse non urna mi, quis tincidunt eros. Nullam tellus turpis, fringilla sit amet congue ut, luctus a nulla. Donec sit amet sapien neque, id ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a elit congue lacinia.\n\nNullam tellus turpis, fringilla sit amet congue ut, luctus a nulla. Donec sit amet sapien neque, id ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a elit congue lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis ac, gravida quis tortor. Suspendisse non urna mi, quis tincidunt eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    "secondaryTexts": [
+      {
+        "id": 1,
+        "title": "MISSION STATEMENT",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis ac, gravida quis tortor. Suspendisse non urna mi, quis tincidunt eros. Nullam tellus turpis, fringilla sit amet congue ut, luctus a nulla. Donec sit amet sapien neque, id ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a elit congue lacinia."
+      },
+      {
+        "id": 2,
+        "title": "FUN FACTS",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis ac, gravida quis tortor. Suspendisse non urna mi, quis tincidunt eros. Nullam tellus turpis, fringilla sit amet congue ut, luctus a nulla. Donec sit amet sapien neque, id ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a elit congue lacinia."
+      }
+    ],
+    "services": [
+      {
+        "id": 1,
+        "name": "WEBSITES",
+        "mainText": "WEBSITES Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis ac, gravida quis tortor. Suspendisse non urna mi, quis tincidunt eros. Nullam tellus turpis, fringilla sit amet congue ut, luctus a nulla. Donec sit amet sapien neque, id ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a elit congue lacinia.",
+        "icon": "MdOutlineSettings",
+        "list": [
+          {
+            "id": 1,
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          },
+          {
+            "id": 2,
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit fringilla sit amet."
+          },
+          {
+            "id": 3,
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit luctus donec."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "PHOTOGRAPHY",
+        "mainText": "PHOTOGRAPHY Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis ac, gravida quis tortor. Suspendisse non urna mi, quis tincidunt eros. Nullam tellus turpis, fringilla sit amet congue ut, luctus a nulla. Donec sit amet sapien neque, id ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a elit congue lacinia.",
+        "icon": "GoDeviceCamera",
+        "list": [
+          {
+            "id": 1,
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          },
+          {
+            "id": 2,
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit fringilla sit amet."
+          },
+          {
+            "id": 3,
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit luctus donec."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "SEO",
+        "mainText": "SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis ac, gravida quis tortor. Suspendisse non urna mi, quis tincidunt eros. Nullam tellus turpis, fringilla sit amet congue ut, luctus a nulla. Donec sit amet sapien neque, id ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a elit congue lacinia.",
+        "icon": "BiSearchAlt",
+        "list": [
+          {
+            "id": 1,
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          },
+          {
+            "id": 2,
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit fringilla sit amet."
+          },
+          {
+            "id": 3,
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit luctus donec."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "APPLICATIONS",
+        "mainText": "APPLICATIONS Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis ac, gravida quis tortor. Suspendisse non urna mi, quis tincidunt eros. Nullam tellus turpis, fringilla sit amet congue ut, luctus a nulla. Donec sit amet sapien neque, id ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a elit congue lacinia.",
+        "icon": "GoBrowser",
+        "list": [
+          {
+            "id": 1,
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          },
+          {
+            "id": 2,
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit fringilla sit amet."
+          },
+          {
+            "id": 3,
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit luctus donec."
+          }
+        ]
+      }
+    ]
+  }
+}
