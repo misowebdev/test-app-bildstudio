@@ -7,6 +7,7 @@ import Title from "../../components/UI/Title";
 import MainText from "./MainText";
 import SecondaryTexts from "./SecondaryTexts";
 import Services from "./Services";
+import Callout from "../../components/Callout";
 import Spinner from "../../components/UI/Spinner";
 
 import { getAboutData } from "../../api/api";
@@ -18,7 +19,7 @@ function About() {
   if (isError) return <span>Error: {error.message}</span>;
 
   return (
-    <Box component="main" sx={{ mt: 2, mb: 2 }}>
+    <Box component="main" sx={{ mt: 2 }}>
       <Title title={data.title} />
       <Container maxWidth="md" component="section">
         <MainText content={data.mainText} />
@@ -27,6 +28,7 @@ function About() {
       <Container disableGutters maxWidth="false" component="section">
         <Services content={data.services} />
       </Container>
+      <Callout />
     </Box>
   );
 }

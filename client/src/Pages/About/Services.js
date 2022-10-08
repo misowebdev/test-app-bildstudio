@@ -85,17 +85,19 @@ function Services({ content }) {
           <TabContent value={selectedTab} index={index} key={service.id}>
             <Typography variant="body2">{service.mainText}</Typography>
             <List>
-              {service.list.map((listEl) => (
-                <ListItem key={listEl.id} sx={{ pt: 0, pb: 0 }}>
-                  <ListItemIcon sx={{ minWidth: 20 }}>
-                    <FaAngleRight />
-                  </ListItemIcon>
-                  <ListItemText
-                    primary={listEl.text}
-                    primaryTypographyProps={{ variant: "body2" }}
-                  />
-                </ListItem>
-              ))}
+              {service.list
+                ? service.list.map((listEl) => (
+                    <ListItem key={listEl.id} sx={{ pt: 0, pb: 0 }}>
+                      <ListItemIcon sx={{ minWidth: 20 }}>
+                        <FaAngleRight />
+                      </ListItemIcon>
+                      <ListItemText
+                        primary={listEl.text}
+                        primaryTypographyProps={{ variant: "body2" }}
+                      />
+                    </ListItem>
+                  ))
+                : null}
             </List>
           </TabContent>
         ))}
@@ -103,5 +105,22 @@ function Services({ content }) {
     </>
   );
 }
+
+Services.propTypes = {
+  content: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      mainText: PropTypes.string.isRequired,
+      icon: PropTypes.string.isRequired,
+      list: PropTypes.arrayOf(
+        PropTypes.shape({
+          id: PropTypes.number.isRequired,
+          text: PropTypes.string.isRequired,
+        })
+      ),
+    })
+  ).isRequired,
+};
 
 export default Services;

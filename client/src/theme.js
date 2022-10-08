@@ -22,6 +22,9 @@ const theme = createTheme({
       medium: "#dadada",
       dark: "#322f2f",
     },
+    text: {
+      light: "#efefef",
+    },
   },
   typography: {
     allVariants: {
