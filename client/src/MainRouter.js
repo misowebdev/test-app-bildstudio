@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 
 import Home from "./Pages/Home";
 import About from "./Pages/About/About";
-import Work from "./Pages/Work";
+import Work from "./Pages/Work/Work";
 import Contact from "./Pages/Contact/Contact";
 import LayoutWrapper from "./components/LayoutWrapper";
 
