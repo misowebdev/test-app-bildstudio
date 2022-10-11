@@ -86,121 +86,131 @@
       }
     ]
   },
-  "messages": [
-    {
-      "name": "kljklj",
-      "email": "sako@gmail.com",
-      "subject": "gjh",
-      "message": "uhjgjhgjh",
-      "id": 1
-    }
-  ],
+  "messages": [],
   "projects": [
     {
       "id": 1,
       "name": "My awesome project 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.",
       "image": "portfolio1.png",
       "category": "print"
     },
     {
       "id": 2,
       "name": "My awesome project 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.",
       "image": "portfolio2.png",
       "category": "web"
     },
     {
       "id": 3,
       "name": "My awesome project 3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.",
       "image": "portfolio3.png",
       "category": "web"
     },
     {
       "id": 4,
       "name": "My awesome project 4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.",
       "image": "portfolio4.png",
       "category": "applications"
     },
     {
       "id": 5,
       "name": "My awesome project 5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.",
       "image": "portfolio5.png",
       "category": "applications"
     },
     {
       "id": 6,
       "name": "My awesome project 6",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.",
       "image": "portfolio6.png",
       "category": "print"
     },
     {
       "id": 7,
       "name": "My awesome project 7",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.",
       "image": "portfolio7.png",
       "category": "web"
     },
     {
       "id": 8,
       "name": "My awesome project 8",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.",
       "image": "portfolio8.png",
       "category": "web"
     },
     {
       "id": 9,
       "name": "My awesome project 9",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.",
       "image": "portfolio9.png",
       "category": "applications"
     },
     {
       "id": 10,
       "name": "My awesome project 10",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.",
       "image": "portfolio1.png",
       "category": "applications"
     },
     {
       "id": 11,
       "name": "My awesome project 11",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.",
       "image": "portfolio2.png",
       "category": "applications"
     },
     {
       "id": 12,
       "name": "My awesome project 12",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.",
       "image": "portfolio3.png",
       "category": "applications"
     },
     {
       "id": 13,
       "name": "My awesome project 13",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.",
       "image": "portfolio3.png",
       "category": "applications"
     },
     {
       "id": 14,
       "name": "My awesome project 14",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.",
       "image": "portfolio1.png",
       "category": "applications"
     },
     {
       "id": 15,
       "name": "My awesome project 15",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.",
       "image": "portfolio2.png",
       "category": "applications"
     },
     {
       "id": 16,
       "name": "My awesome project 16",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.",
       "image": "portfolio7.png",
       "category": "applications"
     },
     {
       "id": 17,
       "name": "My awesome project 17",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.",
       "image": "portfolio9.png",
       "category": "applications"
     },
     {
       "id": 18,
       "name": "My awesome project 18",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.",
       "image": "portfolio4.png",
       "category": "applications"
     }

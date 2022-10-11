@@ -16,8 +16,8 @@ import StoreHours from "./StoreHours";
 function Contact() {
   const mutation = useMutation(sendMessage);
 
-  const handleFormSubmit = (message) => {
-    mutation.mutate(message);
+  const handleFormSubmit = (message, token) => {
+    mutation.mutate({ message, token });
   };
 
   return (

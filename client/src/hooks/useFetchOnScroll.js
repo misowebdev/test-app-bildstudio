@@ -5,10 +5,11 @@ function useFetchOnScroll(isFetching, hasNextPage, fetch) {
     const onScroll = async (event) => {
       const { scrollHeight, scrollTop, clientHeight } =
         event.target.scrollingElement;
+
       if (
         !isFetching &&
         hasNextPage &&
-        scrollHeight - scrollTop <= clientHeight * 1.1
+        scrollHeight - scrollTop <= clientHeight * 1.2
       ) {
         fetch();
       }

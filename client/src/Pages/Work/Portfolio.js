@@ -54,7 +54,7 @@ function Portfolio() {
   }, [data, selectedCategory]);
 
   const handleCategoryChange = (category) => setSelectedCategory(category);
-  const handlelayoutChange = (layout) => setSelectedLayout(layout);
+  const handleLayoutChange = (layout) => setSelectedLayout(layout);
 
   if (isLoading) return <Spinner />;
   if (isError) return <Typography>Error: {error.message}</Typography>;
@@ -65,7 +65,7 @@ function Portfolio() {
         selectedCategory={selectedCategory}
         selectedLayout={selectedLayout}
         onCategoryChange={handleCategoryChange}
-        onLayoutChange={handlelayoutChange}
+        onLayoutChange={handleLayoutChange}
       />
       <Box sx={{ mt: 3, mb: 3, minHeight: 500 }}>
         {selectedLayout === "grid" ? (

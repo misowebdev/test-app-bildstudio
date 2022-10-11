@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import PropTypes from "prop-types";
 
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
@@ -19,22 +20,25 @@ function ListView({ data }) {
   }
   return (
     <List>
-      {data.map((project) => (
-        <Fragment key={project.id}>
+      {data?.map((item) => (
+        <Fragment key={item.id}>
           <ListItem disableGutters>
             <ListItemButton>
               <ListItemIcon>
                 <Box
                   component="img"
-                  src={`images/${project.image}`}
+                  src={`images/${item.image}`}
                   width={80}
                   height={80}
                   sx={{ objectFit: "cover" }}
+                  alt={item.name}
                 />
               </ListItemIcon>
               <ListItemText
-                primary={project.name}
+                primary={item.name}
+                secondary={item?.description}
                 primaryTypographyProps={{ variant: "h5", ml: 7 }}
+                secondaryTypographyProps={{ ml: 7 }}
               />
             </ListItemButton>
           </ListItem>
@@ -44,5 +48,15 @@ function ListView({ data }) {
     </List>
   );
 }
+
+ListView.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      description: PropTypes.string,
+    }).isRequired
+  ),
+};
 
 export default ListView;

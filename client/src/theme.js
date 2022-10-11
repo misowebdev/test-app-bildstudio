@@ -30,6 +30,7 @@ const theme = createTheme({
     allVariants: {
       color: "#00000099",
     },
+    fontFamily: ["sans-serif"],
   },
 });
 

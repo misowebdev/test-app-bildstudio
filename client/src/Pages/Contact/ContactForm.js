@@ -1,3 +1,4 @@
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import PropTypes from "prop-types";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -28,10 +29,15 @@ const validationSchema = Yup.object({
 });
 
 function ContactForm({ onSubmit, status }) {
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
   const formic = useFormik({
     initialValues,
     validationSchema,
-    onSubmit: (values) => onSubmit(values),
+    onSubmit: async (values) => {
+      const token = await executeRecaptcha("contactForm");
+      onSubmit({ values, token });
+    },
   });
 
   if (status === "success" || status === "error") {
