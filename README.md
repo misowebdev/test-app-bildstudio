@@ -58,7 +58,7 @@ Clone the repo <br />
 navigate to project root<br />
 install NPM packages<br />
 <b>npm install</b><br />
-Start the JSON server an React App concurrently<br />
+Start the JSON server and React App concurrently<br />
 <b>npm run start-full</b>
 
 <h2>env variables required:</h2>
