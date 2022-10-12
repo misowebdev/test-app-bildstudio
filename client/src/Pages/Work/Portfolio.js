@@ -5,9 +5,9 @@ import useFetchOnScroll from "../../hooks/useFetchOnScroll";
 import { listProjects } from "../../api/projectApi";
 
 import Filter from "./Filter";
-import GridView from "./GridView";
-import ListView from "./ListView";
 import Spinner from "../../components/UI/Spinner";
+import GridView from "../../components/UI/GridView";
+import ListView from "../../components/UI/ListView";
 
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";

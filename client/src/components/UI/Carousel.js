@@ -17,11 +17,11 @@ import { FaAngleRight } from "react-icons/fa";
 function Carousel({ data }) {
   const [activeItem, setActiveItem] = useState(0);
 
+  const extraLarge = useMediaQuery((theme) => theme.breakpoints.up("xl"));
   const onMobile = useMediaQuery((theme) => theme.breakpoints.only("xs"));
   const onTablet = useMediaQuery((theme) =>
     theme.breakpoints.between("sm", "md")
   );
-  const extraLarge = useMediaQuery((theme) => theme.breakpoints.up("xl"));
 
   const {
     carouselFragment,

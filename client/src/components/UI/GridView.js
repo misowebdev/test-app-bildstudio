@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import CardItem from "../../components/UI/CardItem";
+import CardItem from "./CardItem";
 
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";

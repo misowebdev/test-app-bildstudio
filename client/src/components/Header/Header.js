@@ -1,11 +1,13 @@
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 import logo from "../../assets/images/logo.png";
 
 import SocialIcons from "./SocialIcons";
 import NavBar from "./NavBar";
+import HamburgerMenu from "./HamburgerMenu";
 
 const pages = [
   { label: "Home", path: "/" },
@@ -15,6 +17,8 @@ const pages = [
 ];
 
 function Header() {
+  const isMobileTablet = useMediaQuery((theme) => theme.breakpoints.down("md"));
+
   return (
     <Container maxWidth="md" component="header">
       <Box
@@ -27,10 +31,10 @@ function Header() {
         }}
       >
         <Box component="img" src={logo} alt="logo" />
-        <SocialIcons />
+        {!isMobileTablet ? <SocialIcons /> : <HamburgerMenu pages={pages} />}
       </Box>
       <Divider sx={{ mt: 2, mb: 2 }} />
-      <NavBar pages={pages} />
+      {!isMobileTablet ? <NavBar pages={pages} /> : null}
     </Container>
   );
 }
