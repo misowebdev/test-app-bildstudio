@@ -12,7 +12,8 @@ import { listProjects } from "../../api/projectApi";
 function Featured() {
   const { data, isLoading, isError, error } = useQuery(
     ["featuredProjects"],
-    () => listProjects(1, 7)
+    () => listProjects(1, 7),
+    { staleTime: 5 * 60 * 1000 }
   );
 
   if (isLoading) return <Spinner />;

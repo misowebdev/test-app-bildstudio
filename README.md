@@ -33,7 +33,6 @@ PSD to HTML conversion
         <li>Contact Form with validation</li>
         <li>reCAPTCHA v3 integration</li>
         <li>Form Success Message</li>
-      
     </ul>
 </li>
 </ul>

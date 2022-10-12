@@ -14,7 +14,11 @@ import Spinner from "../../components/UI/Spinner";
 import { getAboutData } from "../../api/aboutApi";
 
 function About() {
-  const { data, isLoading, isError, error } = useQuery(["about"], getAboutData);
+  const { data, isLoading, isError, error } = useQuery(
+    ["about"],
+    getAboutData,
+    { staleTime: 5 * 60 * 1000 }
+  );
 
   if (isLoading) return <Spinner />;
   if (isError) return <span>Error: {error.message}</span>;
