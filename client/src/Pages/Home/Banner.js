@@ -1,11 +1,21 @@
 import { Link } from "react-router-dom";
-
-import Animate from "../../components/Animate";
+import { useSpring, animated } from "react-spring";
 
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+
+function Animate({ children, delay }) {
+  const animation = useSpring({
+    from: { opacity: 0, transform: "scale(1.4)" },
+    to: { opacity: 1, transform: "scale(1)" },
+    delay: delay || 0,
+    config: { duration: 300 },
+  });
+
+  return <animated.div style={animation}>{children}</animated.div>;
+}
 
 function Banner() {
   return (

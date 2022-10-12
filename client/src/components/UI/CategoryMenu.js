@@ -28,7 +28,7 @@ function CategoryMenu({ categories, selectedCategory, onCategoryChange }) {
           >
             {categories.map((category) => (
               <MenuItem value={category} key={category}>
-                {category}
+                {category.toUpperCase()}
               </MenuItem>
             ))}
           </Select>

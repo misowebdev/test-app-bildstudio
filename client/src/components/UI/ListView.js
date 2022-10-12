@@ -23,22 +23,25 @@ function ListView({ data }) {
       {data?.map((item) => (
         <Fragment key={item.id}>
           <ListItem disableGutters>
-            <ListItemButton>
+            <ListItemButton disableGutters>
               <ListItemIcon>
                 <Box
                   component="img"
                   src={`images/${item.image}`}
                   width={80}
-                  height={80}
-                  sx={{ objectFit: "cover" }}
+                  sx={{ objectFit: "cover", height: { xs: 100, sm: 80 } }}
                   alt={item.name}
                 />
               </ListItemIcon>
               <ListItemText
                 primary={item.name}
                 secondary={item?.description}
-                primaryTypographyProps={{ variant: "h5", ml: 7 }}
-                secondaryTypographyProps={{ ml: 7 }}
+                primaryTypographyProps={{
+                  variant: "h5",
+                  ml: { xs: 1, md: 7 },
+                  fontSize: { xs: "1.2rem", md: "1.5rem" },
+                }}
+                secondaryTypographyProps={{ ml: { xs: 1, md: 7 } }}
               />
             </ListItemButton>
           </ListItem>

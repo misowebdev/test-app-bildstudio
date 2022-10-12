@@ -6,7 +6,7 @@ import Subtitle from "../../components/UI/Subtitle";
 
 function SecondaryTexts({ content }) {
   return (
-    <Grid container spacing={3} mt={3} mb={3}>
+    <Grid container spacing={3} mt={3}>
       {content.map((text) => (
         <Grid item xs={12} md={6} key={text.id}>
           <Subtitle subtitle={text.title} />

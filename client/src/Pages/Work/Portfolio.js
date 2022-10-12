@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { useInfiniteQuery } from "@tanstack/react-query";
+import { useTransition, animated } from "react-spring";
 
 import useFetchOnScroll from "../../hooks/useFetchOnScroll";
 import { listProjects } from "../../api/projectApi";
@@ -24,6 +25,13 @@ const filterData = (data, category) => {
 function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedLayout, setSelectedLayout] = useState("grid");
+
+  const transitions = useTransition(selectedLayout, {
+    from: { opacity: 0, transform: "rotateY(180deg)" },
+    enter: { opacity: 1, transform: "scale(1)" },
+    leave: { position: "absolute", opacity: 0, transform: "scale(0.6)" },
+    initial: null,
+  });
 
   const {
     data,
@@ -67,11 +75,21 @@ function Portfolio() {
         onCategoryChange={handleCategoryChange}
         onLayoutChange={handleLayoutChange}
       />
-      <Box sx={{ mt: 3, mb: 3, minHeight: 500 }}>
-        {selectedLayout === "grid" ? (
-          <GridView data={filtered} />
-        ) : (
-          <ListView data={filtered} />
+      <Box sx={{ mt: 3, mb: 3, minHeight: 500, position: "relative" }}>
+        {transitions((styles, selectedLayout) =>
+          selectedLayout === "grid" ? (
+            <animated.div
+              style={{ ...styles, top: 0, left: 0, right: 0, bottom: 0 }}
+            >
+              <GridView data={filtered} />
+            </animated.div>
+          ) : (
+            <animated.div
+              style={{ ...styles, top: 0, left: 0, right: 0, bottom: 0 }}
+            >
+              <ListView data={filtered} />
+            </animated.div>
+          )
         )}
       </Box>
       {isFetchingNextPage ? <Spinner /> : null}

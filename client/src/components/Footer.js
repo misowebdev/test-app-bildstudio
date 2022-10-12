@@ -23,9 +23,17 @@ function Footer() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          flexDirection: { xs: "column-reverse", md: "row" },
         }}
       >
-        <Typography variant="subtitle2" component="p">
+        <Typography
+          variant="subtitle2"
+          component="p"
+          sx={{
+            fontSize: { xs: "0.675rem", md: "0.875rem" },
+            mt: { xs: 2, md: 0 },
+          }}
+        >
           COPYRIGHT {new Date().getFullYear()} DISPLAY. ALL RIGHTS RESERVED.
         </Typography>
 

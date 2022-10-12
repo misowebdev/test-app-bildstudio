@@ -5,6 +5,7 @@ import About from "./Pages/About/About";
 import Work from "./Pages/Work/Work";
 import Contact from "./Pages/Contact/Contact";
 import LayoutWrapper from "./components/LayoutWrapper";
+import PageNotFound from "./Pages/PageNotFound";
 
 function MainRouter() {
   return (
@@ -14,6 +15,7 @@ function MainRouter() {
         <Route path="/about" element={<About />} />
         <Route path="/work" element={<Work />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<PageNotFound />} />
       </Route>
     </Routes>
   );

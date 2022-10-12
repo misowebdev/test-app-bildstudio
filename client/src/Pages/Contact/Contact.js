@@ -1,4 +1,5 @@
 import { useMutation } from "@tanstack/react-query";
+import { Helmet } from "react-helmet-async";
 
 import { sendMessage } from "../../api/messageApi";
 
@@ -21,22 +22,31 @@ function Contact() {
   };
 
   return (
-    <Box component="main" sx={{ mt: 2 }}>
-      <Title title="GOT A QUESTION OR INQUIRY?" />
-      <Map />
-      <Container maxWidth="md" sx={{ mt: 3 }}>
-        <Grid container spacing={5}>
-          <Grid item xs={12} md={8}>
-            <ContactForm onSubmit={handleFormSubmit} status={mutation.status} />
+    <>
+      <Helmet defer={false}>
+        <title>Contact</title>
+        <meta name="description" content="Contact Page nice description" />
+      </Helmet>
+      <Box component="main" sx={{ mt: 2 }}>
+        <Title title="GOT A QUESTION OR INQUIRY?" />
+        <Map />
+        <Container maxWidth="md" sx={{ mt: 3 }}>
+          <Grid container spacing={5}>
+            <Grid item xs={12} md={8}>
+              <ContactForm
+                onSubmit={handleFormSubmit}
+                status={mutation.status}
+              />
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <ContactInfo />
+              <StoreHours />
+            </Grid>
           </Grid>
-          <Grid item xs={12} md={4}>
-            <ContactInfo />
-            <StoreHours />
-          </Grid>
-        </Grid>
-      </Container>
-      <Callout />
-    </Box>
+        </Container>
+        <Callout />
+      </Box>
+    </>
   );
 }
 

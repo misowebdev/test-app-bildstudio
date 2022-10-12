@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 
 function MainText({ content }) {
   return (
-    <Grid container spacing={3} mt={3} mb={3}>
+    <Grid container spacing={3} mt={3}>
       <Grid item xs={12} md={5}>
         <Box
           component="img"
